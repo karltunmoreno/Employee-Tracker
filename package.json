@@ -20,7 +20,12 @@
   "dependencies": {
     "console.table": "^0.10.0",
     "express": "^4.17.3",
+    "form-data": "^4.0.0",
     "inquirer": "^8.2.1",
+    "module_name": "^1.0.0",
     "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.22"
   }
 }
