@@ -2,14 +2,14 @@
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
 require('console.table');
-const connection = require ('./db/connection')
+const db = require ('./db/connection')
 
-class DB {
-    constructor (connection){
-        this.connection = connection
-    }
+//class DB {
+    //constructor (connection){
+       // this.connection = connection
+   // }
 
-}
+//}//
 
 
 // Create prompt with choices for employee tracking
@@ -38,19 +38,19 @@ function selectToDo () {
             case "View all departments":
                 selectAllDepartments().then(([rows, fields]) => {
                     console.table(rows);
-                    wantToExit();
+                    selectToDo();
                 });
             break;
             case "View all roles":
                 selectAllRoles().then(([rows, fields]) => {
                     console.table(rows)
-                    wantToExit();
+                    selectToDo();
                 });
             break;
             case "View all employees":
                 selectAllEmployees().then(([rows, fields]) => {
                     console.table(rows)
-                    wantToExit();
+                    selectToDo();
                 });
             break;
             case "Add a department":
@@ -78,17 +78,17 @@ function selectToDo () {
     // function runs when view all departments is selected
     
     const selectAllDepartments = () => {
-        return db.promise().execute("SELECT * FROM Departments;");
+        return db.promise().execute("SELECT * FROM department;");
     };
     
     // function runs when view all roles is selected
     const selectAllRoles = () => {
-        return db.promise().execute("SELECT * FROM Roles;");
+        return db.promise().execute("SELECT * FROM role;");
     }
     
     // function runs when view all employees is selected
     const selectAllEmployees = () => {
-        return db.promise().execute("SELECT * FROM Employees;");
+        return db.promise().execute("SELECT * FROM employee;");
     }
     
     
