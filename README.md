@@ -79,5 +79,5 @@ npm start
 ______________________________________________________________________________________________________________________________________________________________
 
 ### Project Link: 
-[https://github.com/aaguirre7/reimagined-workers](https://github.com/aaguirre7/reimagined-workers)
+https://www.youtube.com/watch?v=Mit8oSWdV50
 
