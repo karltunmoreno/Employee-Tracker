@@ -71,10 +71,7 @@ Run the following from the directory where you have downloaded the repo.
 npm start
 
 ```
-### Video
-![ezgif com-gif-maker](https://www.youtube.com/watch?v=Mit8oSWdV50)
-
--------------------------
+------------------------
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
